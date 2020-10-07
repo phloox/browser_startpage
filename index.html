@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>( ˘ ³˘)♥</title>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<script src="scripts/transitions.js"></script>
+	</head>
+
+	<body>
+		<svg id="fader"></svg>
+        <script>fadeInPage();</script>
+
+		<!-- Welcome screen -->
+		<div id="main_window">
+			<img id=leftImg src="assets/img/image.gif" class="image">
+			<div id="content">
+				<h1 class="title">( ˘ ³˘)♥</h1>
+				<div id="date">
+					<script type="text/javascript">
+						function doDate() {
+							var str = "";
+							var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+							var clock = new Date();
+							var now = new Date();
+
+							str += months[clock.getMonth()] + " " + now.getDate() + ", " + clock.getFullYear() + " | " + ("0" + now.getHours()).slice(-2) +":" + ("0" + now.getMinutes()).slice(-2) + ":" + ("0" + now.getSeconds()).slice(-2);
+							document.getElementById("date").innerHTML = str;
+						}
+						setInterval(doDate, 1000);
+						doDate();
+					</script>
+				</div>
+
+		<!-- Web search -->
+				<div id="web_search">
+					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+						<!--  <label for="q">></label> -->
+						<input autofocus
+			        	 		id="q"
+			         			name="q"
+			         			type="search"
+			         			placeholder="search with duckduckgo...">
+					</form>
+				</div>
+
+		<!-- Links -->
+				<nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">Frequent</a>
+								<li><a href="https://notion.so/">Notion</a></li>
+								<li><a href="https://app.getpocket.com/">Pocket</a></li>
+								<li><a href="https://reddit.com/">Reddit</a></li>
+								<li><a href="https://github.com/sindresorhus/awesome/blob/main/readme.md">Awesome</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Cloud</a>
+								<li><a href="https://eu-central-1.console.aws.amazon.com/console/">AWS Console</a></li>
+								<li><a href="https://github.com/">Github</a></li>
+								<li><a href="https://www.dropbox.com/">Dropbox</a></li>
+								<li><a href="https://www.icloud.com/">iCloud</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Design</a>
+								<li><a href="https://www.checklist.design/">Checklist</a></li>
+								<li><a href="https://designresourc.es/">Resources</a></li>
+								<li><a href="https://nodesign.dev">No Design</a></li>
+								<li><a href="https://material.io/">Material</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Code</a>
+								<li><a href="https://codepen.io/">Codepen</a></li>
+								<li><a href="https://dev.to/zinox9/road-map-to-study-javascript-4o3c/">JS Map</a></li>
+								<li><a href="https://github.com/bendc/frontend-guidelines/">FE Guide</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Writing</a>
+								<li><a href="https://www.synonimy.pl/">Synonimy</a></li>
+								<li><a href="http://www.hemingwayapp.com/">Hemingway</a></li>
+								<li><a href="https://www.grammarly.com/">Grammarly</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="bottom">
+			<div class="contacts">
+				<p>
+					<span id="light-mode-toggle" class="light-mode-toggle"></span>
+				</p>
+			</div>
+		</div>
+
+		<script src="scripts/darkmode.js">Light / Dark</script>
+	</body>
+</html>
