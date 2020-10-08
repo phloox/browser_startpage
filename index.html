@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
-		<title>( ˘ ³˘)♥</title>
+		<title>ƪ(ړײ)‎ƪ​​</title>
 		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<script src="scripts/transitions.js"></script>
+		<link rel="icon" type="image/png" href="assets/img/favicon.png">
 	</head>
 
 	<body>
 		<svg id="fader"></svg>
         <script>fadeInPage();</script>
-
-		<!-- Welcome screen -->
+		<!-- Welcome & clock -->
 		<div id="main_window">
 			<img id=leftImg src="assets/img/image.gif" class="image">
 			<div id="content">
-				<h1 class="title">( ˘ ³˘)♥</h1>
+				<h1 class="title">(ﾉ◕ヮ◕)ﾉ*:・ﾟ✧</h1>
 				<div id="date">
 					<script type="text/javascript">
 						function doDate() {
@@ -32,11 +33,10 @@
 						doDate();
 					</script>
 				</div>
-
-		<!-- Web search -->
+		<!-- Search panel -->
 				<div id="web_search">
 					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
-						<!--  <label for="q">></label> -->
+						<label for="q">></label>
 						<input autofocus
 			        	 		id="q"
 			         			name="q"
@@ -44,39 +44,38 @@
 			         			placeholder="search with duckduckgo...">
 					</form>
 				</div>
-
-		<!-- Links -->
+		<!-- Bookmarks -->
 				<nav>
 					<div id=links_container>
-						<ul>
-							<a class="subtitle">Frequent</a>
+						<ul id=subtitle1>
+							<a class="subtitle1">Frequent</a>
 								<li><a href="https://notion.so/">Notion</a></li>
 								<li><a href="https://app.getpocket.com/">Pocket</a></li>
 								<li><a href="https://reddit.com/">Reddit</a></li>
 								<li><a href="https://github.com/sindresorhus/awesome/blob/main/readme.md">Awesome</a></li>
 						</ul>
-						<ul>
-							<a class="subtitle">Cloud</a>
+						<ul id=subtitle2>
+							<a class="subtitle2">Cloud</a>
 								<li><a href="https://eu-central-1.console.aws.amazon.com/console/">AWS Console</a></li>
 								<li><a href="https://github.com/">Github</a></li>
 								<li><a href="https://www.dropbox.com/">Dropbox</a></li>
 								<li><a href="https://www.icloud.com/">iCloud</a></li>
 						</ul>
-						<ul>
-							<a class="subtitle">Design</a>
+						<ul id=subtitle3>
+							<a class="subtitle3">Design</a>
 								<li><a href="https://www.checklist.design/">Checklist</a></li>
 								<li><a href="https://designresourc.es/">Resources</a></li>
 								<li><a href="https://nodesign.dev">No Design</a></li>
 								<li><a href="https://material.io/">Material</a></li>
 						</ul>
-						<ul>
-							<a class="subtitle">Code</a>
+						<ul id=subtitle4>
+							<a class="subtitle4">Code</a>
 								<li><a href="https://codepen.io/">Codepen</a></li>
 								<li><a href="https://dev.to/zinox9/road-map-to-study-javascript-4o3c/">JS Map</a></li>
 								<li><a href="https://github.com/bendc/frontend-guidelines/">FE Guide</a></li>
 						</ul>
-						<ul>
-							<a class="subtitle">Writing</a>
+						<ul id=subtitle5>
+							<a class="subtitle5">Writing</a>
 								<li><a href="https://www.synonimy.pl/">Synonimy</a></li>
 								<li><a href="http://www.hemingwayapp.com/">Hemingway</a></li>
 								<li><a href="https://www.grammarly.com/">Grammarly</a></li>
@@ -85,16 +84,14 @@
 				</nav>
 			</div>
 		</div>
-
 		<!-- Footer -->
 		<div class="bottom">
 			<div class="contacts">
 				<p>
-					<span id="light-mode-toggle" class="light-mode-toggle"></span>
+					<span id="color-mode-toggle" class="color-mode-toggle">w/ ♥ by Kuba</span>
 				</p>
 			</div>
 		</div>
-
-		<script src="scripts/darkmode.js">Light / Dark</script>
+		<script src="scripts/colormode.js"></script>
 	</body>
 </html>
