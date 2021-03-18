@@ -1,45 +1,39 @@
-/* #BE7376 | 190, 115, 118 | Slightly desaturated red */
-/* #A32F3D | 163, 47, 61   | Dark red */
-/* #FF6E33 | 255, 110, 51  | Vivid orange */
-/* #CD412A | 205, 65, 42   | Strong red */
-/* #CB5846 | 203, 88, 70   | Moderate red* */
-/* #B01F2D | 176, 31, 45   | Dark red */
-/* #7E4068 | 126, 64, 104  | Dark moderate pink */
 :root {
 	--title: #FF6E33;
 	--date: #A32F3D;
 	--subtitle1: #FF6E33;
-	--subtitle2: #CD412A;
-	--subtitle3: #CB5846;
-	--subtitle4: #B01F2D;
+	--subtitle2: #A32F3DFF;
+	--subtitle3: #355C7DFF;
+	--subtitle4: #355C7DFF;
 	--subtitle5: #7E4068;
-	--bg: #121c21;
-	--fg: #121c21;
-	--text: #989da1;
+	--bg: #0a0e14;
+	--fg: #0a0e14;
+	--text: #b3b1ad;
 	--search-bg: rgba(163, 47, 61, 0);
-	--footer: #FF6E33;
+	--footer: #0a0e14;
 	}
 
 .colormode {
-	--title: #9a5165;
-	--date: #9a5165;
-	--subtitle1: #619d8e;
-	--subtitle2: #619d8e;
-	--subtitle3: #619d8e;
-	--subtitle4: #619d8e;
-	--subtitle5: #619d8e;
+	--title: #FF7582;
+	--date: #C56C86;
+	--subtitle1: #725A7A;
+	--subtitle2: #355C7D;
+	--subtitle3: #FF7582;
+	--subtitle4: #C56C86;
+	--subtitle5: #355C7D;
 	--bg: #121c21;
 	--fg: #121c21;
 	--text: #989da1;
 	--search-bg: rgba(163, 47, 61, 0);
-	--footer: #619d8e;
+	--footer: #121c21;
 }
 
 body {
 	background-color: var(--bg);
-	font-family: 'Space Mono', monospace;
+	font-family: 'cozettevector', monospace;
 	transition: all 0.25s ease-out;
 	color: var(--footer);
+	font-size: 18px;
 }
 
 ul {
