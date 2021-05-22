@@ -30,7 +30,7 @@
 
 body {
 	background-color: var(--bg);
-	font-family: 'cozettevector', monospace;
+	font-family: 'SF Pro Text', monospace;
 	transition: all 0.25s ease-out;
 	color: var(--footer);
 	font-size: 18px;
