@@ -1,271 +1,279 @@
 :root {
-	--title: #FF6E33;
-	--date: #A32F3D;
-	--subtitle1: #FF6E33;
-	--subtitle2: #A32F3DFF;
-	--subtitle3: #355C7DFF;
-	--subtitle4: #355C7DFF;
-	--subtitle5: #7E4068;
-	--bg: #0a0e14;
-	--fg: #0a0e14;
-	--text: #b3b1ad;
-	--search-bg: rgba(163, 47, 61, 0);
-	--footer: #0a0e14;
-	}
+  --title: #ff6e33;
+  --date: #a32f3d;
+  --subtitle1: #ff6e33;
+  --subtitle2: #a32f3dff;
+  --subtitle3: #355c7dff;
+  --subtitle4: #355c7dff;
+  --subtitle5: #7e4068;
+  --bg: #0a0e14;
+  --fg: #0a0e14;
+  --text: #b3b1ad;
+  --search-bg: rgba(163, 47, 61, 0);
+  --footer: #0a0e14;
+}
 
 .colormode {
-	--title: #FF7582;
-	--date: #C56C86;
-	--subtitle1: #725A7A;
-	--subtitle2: #355C7D;
-	--subtitle3: #FF7582;
-	--subtitle4: #C56C86;
-	--subtitle5: #355C7D;
-	--bg: #121c21;
-	--fg: #121c21;
-	--text: #989da1;
-	--search-bg: rgba(163, 47, 61, 0);
-	--footer: #121c21;
+  --title: #ff7582;
+  --date: #c56c86;
+  --subtitle1: #725a7a;
+  --subtitle2: #355c7d;
+  --subtitle3: #ff7582;
+  --subtitle4: #c56c86;
+  --subtitle5: #355c7d;
+  --bg: #121c21;
+  --fg: #121c21;
+  --text: #989da1;
+  --search-bg: rgba(163, 47, 61, 0);
+  --footer: #121c21;
 }
 
 body {
-	background-color: var(--bg);
-	font-family: 'SF Pro Text', monospace;
-	transition: all 0.25s ease-out;
-	color: var(--footer);
-	font-size: 18px;
+  background-color: var(--bg);
+  font-family: "SF Pro Text", monospace;
+  transition: all 0.25s ease-out;
+  color: var(--footer);
+  font-size: 18px;
 }
 
 ul {
-	list-style-type: none;
-	text-align: left;
-	padding: 2px 15px;
+  list-style-type: none;
+  text-align: left;
+  padding: 2px 15px;
 }
 
-p[class=csubtitle1its] > a {
-	position: fixed;
-	bottom: 7px;
-	right: 10px;
+p[class="csubtitle1its"] > a {
+  position: fixed;
+  bottom: 7px;
+  right: 10px;
 }
 
 form {
-	margin: 1em 0;
-	position: relative;
+  margin: 1em 0;
+  position: relative;
 }
 
 form input[type="search"] {
-	background-color: var(--search-bg);
-	border: none;
-	box-sizing: border-box;
-	font-weight: bold;
-	font: inherit;
-	margin-left: 12px;
-	width: 95%;
-	color: var(--date);
-	transition: all 0.2s;
+  background-color: var(--search-bg);
+  border: none;
+  box-sizing: border-box;
+  font-weight: bold;
+  font: inherit;
+  margin-left: 12px;
+  width: 95%;
+  color: var(--date);
+  transition: all 0.2s;
 }
 
 form label {
-	color: var(--date);
-	position: absolute;
-	transition: all 0.4s;
+  color: var(--date);
+  position: absolute;
+  transition: all 0.4s;
 }
 
 form:focus-within input::placeholder {
-	opacity: 0;
+  opacity: 0;
 }
 
 #main_window {
-	background-color: var(--fg);
-	width: 910px;
-	padding-right: 40px;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	transition: all 0.25s;
+  background-color: var(--fg);
+  width: 910px;
+  padding-right: 40px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.25s;
 }
 
 #content {
-	padding-top: 30px;
-	margin-left: 300px;
+  padding-top: 30px;
+  margin-left: 300px;
 }
 
 #date {
-	color: var(--date);
+  color: var(--date);
 }
 
 #links_container {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-#links_container li, a {
-	color: var(--text);
-	text-decoration: none;
-	transition: all 0.4s;
+#links_container li,
+a {
+  color: var(--text);
+  text-decoration: none;
+  transition: all 0.4s;
 }
 
 #subtitle1 a:hover {
-	color: var(--subtitle1);
-	transition: all 0.4s;
+  color: var(--subtitle1);
+  transition: all 0.4s;
 }
 
 #subtitle2 a:hover {
-	color: var(--subtitle2);
-	transition: all 0.4s;
+  color: var(--subtitle2);
+  transition: all 0.4s;
 }
 
 #subtitle3 a:hover {
-	color: var(--subtitle3);
-	transition: all 0.4s;
+  color: var(--subtitle3);
+  transition: all 0.4s;
 }
 
 #subtitle4 a:hover {
-	color: var(--subtitle4);
-	transition: all 0.4s;
+  color: var(--subtitle4);
+  transition: all 0.4s;
 }
 
 #subtitle5 a:hover {
-	color: var(--subtitle5);
-	transition: all 0.4s;
+  color: var(--subtitle5);
+  transition: all 0.4s;
 }
 
 .title {
-	color: var(--title);
+  color: var(--title);
 }
 
 .subtitle1 {
-	font-weight: bold;
-	color: var(--subtitle1);
+  font-weight: bold;
+  color: var(--subtitle1);
 }
 
 .subtitle2 {
-	font-weight: bold;
-	color: var(--subtitle2);
+  font-weight: bold;
+  color: var(--subtitle2);
 }
 
 .subtitle3 {
-	font-weight: bold;
-	color: var(--subtitle3);
+  font-weight: bold;
+  color: var(--subtitle3);
 }
 
 .subtitle4 {
-	font-weight: bold;
-	color: var(--subtitle4);
+  font-weight: bold;
+  color: var(--subtitle4);
 }
 
 .subtitle5 {
-	font-weight: bold;
-	color: var(--subtitle5);
+  font-weight: bold;
+  color: var(--subtitle5);
 }
 
 .title {
-	font-weight: bold;
-	font-style: italic;
+  font-weight: bold;
+  font-style: italic;
 }
 
 .image {
-	max-width: 250px;
-	float: left;
+  max-width: 250px;
+  float: left;
 }
 
 .bottom {
-	position: fixed;
-	bottom: 0;
-	font-size: 0.52em;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.52em;
 }
 
 .bottom a {
-	text-decoration: none;
-	color: var(--date);
+  text-decoration: none;
+  color: var(--date);
 }
 
 .bottom a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 /*  Transitions */
 #fader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
-    pointer-events: none;
-    background: var(--bg);
-    animation-duration: 500ms;
-    animation-timing-function: ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  pointer-events: none;
+  background: var(--bg);
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fade-out {
-    from { opacity: 1 }
-      to { opacity: 0 }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
-    from { opacity: 0 }
-      to { opacity: 1 }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #fader.fade-out {
-    opacity: 0;
-    animation-name: fade-out;
+  opacity: 0;
+  animation-name: fade-out;
 }
 
 #fader.fade-in {
-    opacity: 1;
-    animation-name: fade-in;
+  opacity: 1;
+  animation-name: fade-in;
 }
 
 /*  Media querries */
 @media (max-width: 980px) {
-	img#leftImg {
-    	height: 280px;
-  	}
+  img#leftImg {
+    height: 280px;
+  }
 
-  	#main_window {
-		width: 833px;
-		padding-right: 0;
-	}
+  #main_window {
+    width: 833px;
+    padding-right: 0;
+  }
 
-	ul {
-		padding-top: 0px;
-		margin-top: -7px;
-	}
+  ul {
+    padding-top: 0px;
+    margin-top: -7px;
+  }
 
-	#content {
-		padding-top: 0px;
-		margin-left: 220px;
-	}
+  #content {
+    padding-top: 0px;
+    margin-left: 220px;
+  }
 }
 
 @media (max-width: 833px) {
-	img#leftImg {
-		display: none;
-	}
+  img#leftImg {
+    display: none;
+  }
 
-	#main_window {
-		width: 650px;
-	}
+  #main_window {
+    width: 650px;
+  }
 
-	#content {
-		margin-left: 20px;
-
-	}
+  #content {
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 650px) {
-	#main_window {
-		width: 100%;
-	}
+  #main_window {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
-	form input[type="search"] {
-		width: 90%;
-	}
+  form input[type="search"] {
+    width: 90%;
+  }
 }
